@@ -44,14 +44,14 @@ class Portfolio (models.Model):
     content = models.TextField()
     slug = models.CharField(max_length=130)
     TimeStamp = models.DateTimeField(blank=True)
-    image = models.ImageField(upload_to="home/images", default ="")
+    image = models.ImageField(upload_to="homes/images", default ="")
 
     def __str__(self):
         return self.title + ' by ' + self.content[0:30]
 
 class Post(models.Model):
     id = models.AutoField(primary_key=True)
-    image = models.ImageField(upload_to="home/images", default ="")
+    image = models.ImageField(upload_to="homes/images", default ="")
     title = models.CharField(max_length=255)
     content = models.TextField()
     desc = models.CharField(max_length=25015, default ="")
@@ -113,4 +113,4 @@ class Meta:
 
 class certifications(models.Model):
     id = models.AutoField(primary_key=True)
-    image = models.ImageField(upload_to="home/images", default ="")
+    image = models.ImageField(upload_to="homes/images", default ="")
