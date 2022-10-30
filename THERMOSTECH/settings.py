@@ -24,8 +24,7 @@ SECRET_KEY = 'django-insecure-q!at2_r9-n=xgqm20q2mum@s)tl#wjlp=4mb1guig2m-a^bn&-
 DEBUG = False
 
 # 'localhost','thermostech.herokuapp.com', 'thermostechitsolutions.com']
-ALLOWED_HOSTS = ['localhost', 'thermostech.herokuapp.com',
-                 'thermostechitsolutions.com']
+ALLOWED_HOSTS = ['localhost','thermostech.herokuapp.com', 'thermostechitsolutions.com']
 # 'localhost', 'backend.thermostechitsolutions.com',
 #                  'www.backend.thermostechitsolutions.com'
 
@@ -144,11 +143,13 @@ CORS_ALLOW_METHODS = [
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 
-# Media Files
+# # Media Files
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 DATE_INPUT_FORMATS = ['%d-%m-%Y']
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
